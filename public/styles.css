@@ -1,0 +1,71 @@
+body {
+  background-image: url('./images/image.jpg'); /* Adjust the path */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Keep the background fixed */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+#welcomePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: black;
+  position: relative;
+  padding: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+#usernameInput,
+#startChatButton {
+  margin-top: 10px;
+}
+
+#chat {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: auto;
+}
+
+#messages {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+}
+
+#messageInput,
+#sendButton {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
+
+#sendButton {
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#sendButton:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
